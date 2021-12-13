@@ -17,12 +17,6 @@ def reset():
     twist.angular.x = twist.angular.y = twist.angular.z = 0.0
     return
 
-# def forward():
-#     while True:
-#         key = cv2.waitKey(1)
-#         if key == ('ord'):
-            
-
 def play():
     distance = 2.0
     while True: 
