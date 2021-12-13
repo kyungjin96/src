@@ -16,12 +16,12 @@ from std_msgs.msg import String
 
 
 if __name__ == '__main__' :
-    rospy.init_node("sample_pub01")
+    rospy.init_node("sample_pub02")
     pub = rospy.Publisher("hello", String, queue_size=10)
 
     rate = rospy.Rate(10)
     while rospy.is_shutdown :
-        str = "hello_pubgogo01 : %s"  % rospy.get_time()
+        str = "hello_pubgogo02 : %s"  % rospy.get_time()
         pub.publish(str)
         rate.sleep()
     pass
